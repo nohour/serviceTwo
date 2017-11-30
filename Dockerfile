@@ -7,7 +7,7 @@ MAINTAINER vadim
 RUN \
 	apt-get update && \
 	apt-get -y upgrade && \
-	apt-install nodejs &&
+	apt-install nodejs
 	
 # Copy app to /src
 COPY . /src
