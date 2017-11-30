@@ -7,8 +7,9 @@ MAINTAINER vadim
 RUN \
 	apt-get update && \
 	apt-get -y upgrade && \
-	apt-install nodejs
+	apt-install nodejs && \
 	ln -s "$(which nodejs)" /usr/bin/node
+	
 # Copy app to /src
 COPY . /src
 
