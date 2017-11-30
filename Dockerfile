@@ -7,7 +7,8 @@ MAINTAINER vadim
 RUN \
 	apt-get update && \
 	apt-get -y upgrade && \
-	apt-get -y install nodejs
+	apt-get -y install nodejs && \
+	apt-get -y install npm
 	
 	
 # Copy app to /src
