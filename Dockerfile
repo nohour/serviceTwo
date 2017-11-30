@@ -7,13 +7,14 @@ MAINTAINER vadim
 RUN \
 	apt-get update && \
 	apt-get -y upgrade && \
-	apt-get -y install nodejs
+	apt-get -y install nodejs && \
+	ln -s /usr/bin/nodejs /usr/bin/node
 	
 # Copy app to /src
 COPY . /src
 
 # Install app and dependencies into /src
-RUN cd /src; npm install
+
 
 EXPOSE 3000
 
