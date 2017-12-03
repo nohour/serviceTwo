@@ -5,7 +5,7 @@ var PORT = 3000;
 var os = require('os')
 
 app.get('/about', function (req, res) {
-	let str = 'Its server ' + os.hostname() + 'Hello world'
+	let str = 'Its server :' + os.hostname() + '  Hello world'
 	res.send(str);
 	
 });
